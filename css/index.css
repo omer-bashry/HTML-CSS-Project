@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/***************************************** Style for Header Section  ****************************************/
+
+
+header{
+	border-bottom: 3px dotted #EEE;
+}
+.navbar{
+	margin:9px 102px;
+
+}
+div.collapse {
+	display: flex;
+	justify-content:right;
+}
+div.collapse ul li{
+  margin: 5px;
+  font-size: 17px;
+  font-weight:700;
+  color: #333;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+div.collapse ul li.active {
+	color:#DDD;
+}
+div.collapse ul li:hover {
+	color:#DDD;
+}
+.dropdown{
+	position: relative;
+}
+ div.drop-page  ul,
+ div.drop-Features ul{
+    width: 200px;
+    margin: 20px auto;
+    list-style: none;
+    height: 170px;
+    background: #EEE;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 6%);
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top:9%;
+    transform: translateX(265px);
+    transition: all 0.3s ease 0s;
+    display: none;
+    
+}
+  div.drop-page  ul li,
+  div.drop-Features ul li{
+    cursor: pointer;
+    padding-left:20px;
+    height: 45px;
+    line-height: 40px;
+    transition: all 0.3s ease 0s;
+    font-size: 13px;
+    font-weight: 400;
+    border-bottom: 1px solid #ddd;
+}
+
+   div.drop-page ul li:hover,
+   div.drop-Features ul li:hover{
+   background: #FFF;
+   padding-left:10px; 
+
+}
+div.drop-Features ul{
+    left: 50%;
+    top:9%;
+    transform: translateX(365px);
+    display:none;
+   
+}
+
+
+@media (min-width: 576px) {  }
+
+@media (min-width: 768px) {  }
+
+@media (min-width: 992px) {  }
+
+@media (min-width: 1200px) {  }
+
+
+
+/***************************************** Style for  Main Section  ****************************************/
+
+/***************************************** Style for Men's  Section  ****************************************/
+
+/***************************************** Style for  Women's Section  ****************************************/
+
+/***************************************** Style for  Kid's Section  ****************************************/
+
+/***************************************** Style for Explore Section  ****************************************/
+
+/***************************************** Style for Social Media Section  ****************************************/
+
+/***************************************** Style for Footre Section  ****************************************/
