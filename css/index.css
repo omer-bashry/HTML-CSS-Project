@@ -38,7 +38,9 @@ div.collapse ul li:hover {
 	position: relative;
 }
  div.drop-page  ul,
- div.drop-Features ul{
+ div.drop-Features ul,
+ .navsmall ul
+  {
     width: 200px;
     margin: 20px auto;
     list-style: none;
@@ -55,7 +57,9 @@ div.collapse ul li:hover {
     
 }
   div.drop-page  ul li,
-  div.drop-Features ul li{
+  div.drop-Features ul li,
+  .navsmall ul li
+  {
     cursor: pointer;
     padding-left:20px;
     height: 45px;
@@ -80,16 +84,196 @@ div.drop-Features ul{
    
 }
 
+.openmnue{
+    flex-direction: column;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s;
+    display:none;
+}
+.openmnue span{
+display: block;
+margin: 3px auto;
+ width: 40%;
+ height:3px;
+ background: #000;
+ text-align: right;
+}
+.openmnue span.min-width{
+	width: 60%;
+}
+.closemnue{
+  width: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  left: 83%;
+  top: 11%;
+  display: none;
 
-@media (min-width: 576px) {  }
+}
+.navsmall {
+position: relative;
+}
 
-@media (min-width: 768px) {  }
+.navsmall .small {
+ margin-top: 207px;
+ transform: translate(-50%,-50%);
+ width: 90%;
+ height:auto;
+ display: none;
+ transition: all 0.3s;
+}
+.navsmall .small li{
+ text-align: center;
+ font-size: 15px;
+  font-weight:700;
+  color: #333;
+  letter-spacing: 1px;
+ transition: all 0.3s;
+ padding: 10px;
+ height: auto;
+}
+.navsmall .small li:hover{
+opacity: 0.6;
+background: #DDD;
+}
+ 
+ .navsmall .small li.openPagedrop:hover,
+ .navsmall .small li.openfeaturesdrop:hover{
+    opacity:1;
+    background: none;
+ }
+ .navsmall .small li.openPagedrop div li,
+ .navsmall .small li.openfeaturesdrop div li{
+  width: 100%;
+  font-size: 12px;
+  border-bottom: none;
+  border-top: 1px solid #DDD;
+ }
+ .navsmall .small li.openPagedrop div li:hover,
+ .navsmall .small li.openfeaturesdrop div li:hover{
+    opacity: 0.6;
+    background: #DDD;
 
-@media (min-width: 992px) {  }
+ }
+ 
+@media (max-width:1200px) {
+  header{
+    background: #fff;
+    position: absolute;
+   top: 0;
+   width: 100%;
+   border-bottom: 3px dotted #DDD;
+   height:102px;
+ }
+ .navbar{
+  
+    margin: 12px 50px;
+   
+   }
+.openmnue{
+    display: none;
+   }
+   .closemnue{
+    display: none;
+  }
+  div.drop-Features ul{
+    left: 50%;
+    top:50px;
+    transform: translateX(280px);
+    display:none;
+   
+    }
+    div.drop-page ul{
+    left: 50%;
+    top:50px;
+    transform: translateX(170px);
+    display:none;
+   
+    }
+ }
 
-@media (min-width: 1200px) {  }
+@media (max-width:  992px) { 
+  header{
+   background: #EEE;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   border-bottom: 3px dotted #DDD;
+   height:102px;
+}
+  .openmnue{
+    display: block;
+   }
+   .closemnue{
+    left:88%;
+    display: none;
+  }
+  .navbar{
+  
+    margin: 10px 90px;
+   
+   }
+   .navsmall .small {
+    margin-top: 210px;
+   }
+ }
 
+@media  (max-width: 768px) { 
+      
+  header{
+   background: #EEE;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   border-bottom: 3px dotted #DDD;
+   height:102px;
+}
+    .navbar{
+  
+    margin: 12px 90px;
+   
+   }
+   .openmnue{
+    display: block;
+   }
+   .navsmall ul {
+  margin-top: 140px;
+  } 
+  .closemnue{
+    display: none;
+    left: 85%;
+  }
+}
 
+@media (max-width: 576px)  { 
+	header{
+	 background: #EEE;
+	 position: absolute;
+	 top: 0;
+	 width: 100%;
+	 border-bottom: 3px dotted #DDD;
+	 height:102px;
+}
+    .navbar{
+	
+    margin: 12px 22px;
+   
+   }
+   .openmnue{
+   	display: block;
+   }
+   .navsmall ul {
+  margin-top: 140px;
+  }
+.closemnue{
+  display: none;
+    left: 83%;
+  }
+}
 
 /***************************************** Style for  Main Section  ****************************************/
 
