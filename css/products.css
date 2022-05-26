@@ -1,0 +1,171 @@
+body{
+    font-family: 'Roboto Flex', sans-serif;
+}
+::selection{
+    background-color: #2a2a2a;
+    color: white;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.main-heading{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.main-heading + p{
+    text-align: center;
+    color: #aaaaaa;
+    font-style: italic;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+/* start landding */
+.landding{
+    background-image: url(../images/products-page-heading.jpg);
+    height: 400px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.landding .text h1{
+    color: white;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.landding .text p{
+    color: white;
+    font-style: italic;
+}
+/* end landding */
+/* start gallery */
+.gallery{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-bottom: 3px dotted #eee;
+}
+.gallery .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 30px;
+}
+.gallery .boxes .box{
+    width: 350px;
+}
+@media (max-width: 1200px) {
+    .gallery .boxes .box{
+        width: 290px;
+    }
+}
+@media (max-width: 991px) {
+    .gallery .boxes .box{
+        width: 100%;
+    }
+    .gallery .boxes .box img{
+        width: 100%;
+    }
+}
+.gallery .boxes .box img{
+    max-width: 100%;
+}
+.gallery .boxes .box .image{
+    position:relative;
+    transition: 0.5s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.gallery .boxes .box .image .icons{
+    transition: 0.5s;
+    position: absolute;
+    top: 105%;
+    opacity: 0;
+}
+.gallery .boxes .box .image .icons a{
+    background-color: white;
+    color: #2a2a2a;
+    margin-left: 15px;
+    padding: 13px;
+    font-size: 14px;
+}
+.gallery .boxes .box .image:hover .icons{
+    top: 80%;
+    opacity: 1;
+}
+.gallery .boxes .box .text .rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.gallery .boxes .box .text .rate .pareph{
+    font-size: 20px;
+    font-weight: bold;
+}
+.gallery .boxes .box .text .rate .stars{
+    font-size: 10px;
+}
+.gallery .boxes .box .price{
+    font-weight: bold;
+    font-size: 20px;
+    color: #a1a1a1;
+}
+.gallery .numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.gallery .numbers ul{
+    display: flex;
+    gap: 10px;
+}
+.gallery .numbers ul li a{
+    border: 1px solid #2a2a2a;
+    padding: 10px 15px;
+    color: black;
+    transition: 0.3s;
+}
+.gallery .numbers ul li a.active{
+    background-color: #2a2a2a;
+    color: white;
+}
+.gallery .numbers ul li a:hover{
+    background-color: #2a2a2a;
+    color: white;
+}
+/* end gallery */
