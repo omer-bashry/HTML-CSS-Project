@@ -5,6 +5,9 @@
 }
 
 body{
+  scroll-behavior: smooth;
+  user-select: none;
+  overflow-x: hidden;
   height: 5000px;
 }
 /***************************************** Style for Header Section  ****************************************/
@@ -279,10 +282,13 @@ background: #DDD;
 }
 
 /***************************************** Style for  Main Section  ****************************************/
-.container-fulid{
+section.dotted{
+  padding-bottom: 5%;
   border-bottom: 4px dotted #EEE;
 }
-
+section.min{
+  border-bottom: 4px dotted #EEE;
+}
 div.photo{
   width: 100%;
   height: 100%;
@@ -574,7 +580,11 @@ div.photo{
 
 
 
+
+
 /***************************************** Style for Men's  Section  ****************************************/
+
+
 
 section .desc {
   margin-left: 120px;
@@ -586,16 +596,190 @@ section .desc h2{
  font-weight: 700;
 }
 section .desc span{
-  font-style: 14px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   font-style: italic;
   color: #a1a1a1;
+  font-style: italic;
+}
+.slider{
+  display: inline-block;
+}
+.thumb{
+  position: relative;
+  overflow:hidden;
+  width: 100%;
+}
+.polits {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  transition: 0.4s;
+}
+.polits li{
+  margin-left: 10px;
+  border:none;
+  background: #FFF;
+  width: 60px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.polits a{
+  color: #000;
+  }
+.thumb:hover .polits {
+   margin-top: -80px;
+  }
+  .down-content h4{
+    font-weight: 800;
+  }
+   .down-content span{
+           color: #999;
+           font-weight:600;
+           font-size: 20px;
+   }
+    .items .down-content .stars1 ,.stars2,.stars3{
+       font-size: 14px;
+       list-style: none;
+       width: 100%;
+       margin-top: -60px;
+       position: absolute;
+       left: 28%;
+    }
+    .down-content .stars1 li,.stars2 li,.stars3 li{
+       display: inline-block;
+    }
+    .items{
+      display: inline-block;
+    }
+.stars3{
+  left: 90%;
+  transform: translate(850px);
+}
+.stars2{
+  left: 59%;
+  transform: translate(-130px);
 }
 
 
-/***************************************** Style for  Women's Section  ****************************************/
 
-/***************************************** Style for  Kid's Section  ****************************************/
+
+@media (min-width: 376px) and (max-width: 576.98px) {
+   section .desc {
+  margin-left: 10px;
+  margin-top: 50px;
+  }
+.items{
+  width: 100%;
+  margin-top: 20px;
+  }
+.items .thumb {
+  width: 100%;
+   margin-left: -50px;
+  }
+.down-content h4{
+    font-weight:700;
+    margin-left: -50px;
+  }
+.down-content span{
+   font-size: 18px;
+    margin-left: -50px;
+  }
+  .items .down-content .stars1{
+  left: 70%;
+  }
+  .stars3{
+  left:30%;
+  }
+.stars2{
+  left: 70%;
+  }
+
+
+}
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 570.98px) and (max-width: 767.98px) {
+  section .desc {
+  margin-left: 20px;
+  margin-top: 50px;
+  }
+  .thumb {
+    margin-left: 10px;
+}
+.down-content h4{
+    font-weight:700;
+    margin-left: 15px;
+  }
+.down-content span{
+   font-size: 18px;
+    margin-left: 15px;
+  }
+  .items .down-content .stars1{
+  left: 70%;
+  }
+  .stars3{
+  left:30%;
+  }
+.stars2{
+  left: 70%;
+  }
+}
+
+ /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+      section .desc {
+     margin-left: 10px;
+     margin-top: 50px;
+  }
+  .thumb{
+    margin-left: -80px;
+
+  }
+  .down-content h4{
+    font-weight:700;
+    margin-left: -80px;
+  }
+.down-content span{
+   font-size: 18px;
+    margin-left: -80px;
+  }
+  .stars3{
+  left:28%;
+  }
+.stars2{
+  left: 69%;
+  }
+ }
+
+ /*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+   .stars3{
+  left:28%;
+  }
+.stars2{
+  left: 69%;
+  } 
+}
+
+/* Extra large devices (large desktops, 1200px and up)
+*/
+@media (min-width: 1200px) { 
+ .stars3{
+  left:28%;
+  }
+.stars2{
+  left: 69%;
+  } 
+}
+}
+
+
+
 
 /***************************************** Style for Explore Section  ****************************************/
 
