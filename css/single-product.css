@@ -1,0 +1,204 @@
+body{
+    font-family: 'Roboto Flex', sans-serif;
+}
+::selection{
+    background-color: #2a2a2a;
+    color: white;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.main-heading{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.main-heading + p{
+    text-align: center;
+    color: #aaaaaa;
+    font-style: italic;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+/* start landding */
+.landding{
+    background-image: url(../images/products-page-heading.jpg);
+    height: 400px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.landding .text h1{
+    color: white;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.landding .text p{
+    color: white;
+    font-style: italic;
+}
+/* end landding */
+/* start shope */
+.shope{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.shope .container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+@media (min-width: 1200px) {
+    .shope .container{
+        gap: 0;
+    }
+    .shope .right{
+        margin-left: -150px;
+    }
+}
+.shope .left img{
+    width: 610px;
+    padding-bottom: 30px;
+}
+.shope .right .rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.shope .right .rate .name{
+    font-size: 25px;
+    font-weight: bold;
+}
+.shope .right .rate .stars{
+    font-size: 10px
+}
+.shope .right span.praice{
+    display: block;
+    font-size: 20px;
+    color: #a1a1a1;
+    font-weight: bold;
+    padding-bottom: 30px;
+    border-bottom: 1px dotted #aaaaaa;
+}
+.shope .right .pragraph p.first{
+    padding-top: 40px;
+    line-height: 1.8;
+    color: #aaaaaa;
+    padding-bottom: 20px;
+}
+.shope .right .pragraph .quts{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px dotted #aaaaaa;
+}
+.shope .right .pragraph .quts i{
+    font-size: 40px;
+}
+.shope .right .pragraph .quts p{
+    line-height: 1.5;
+    font-style: italic;
+}
+.shope .right .numbers{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px dotted #aaaaaa;
+}
+.shope .right .numbers p{
+    font-size: 25px;
+    color: #aaa;
+    font-weight: bold;
+}
+.shope .right .numbers ul{
+    display: flex;
+}
+.shope .right .numbers ul li{
+    border: 1px solid #aaaaaa;
+    padding: 5px 10px;
+}
+.shope .right .numbers ul li:first-child,
+.shope .right .numbers ul li:last-child{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.shope .right .numbers ul li:first-child:hover,
+.shope .right .numbers ul li:last-child:hover{
+    background-color: #aaa;
+}
+.shope .right .added{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shope .right .added p{
+    font-size: 25px;
+    color: #aaa;
+    font-weight: bold;
+}
+.shope .right .added span{
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+    border: 1px solid #2a2a2a;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+.shope .right .added span:hover{
+    background-color: #2a2a2a;
+    color: white;
+}
+@media (max-width:991px) {
+    .shope .container{
+        flex-direction: column;
+    }
+    .shope .left img{
+        width: 690px;
+    }
+}
+@media (max-width: 767px) {
+    .shope .left img{
+        width: 100%;
+    }
+    .shope .right{
+        width: 100%;
+    }
+}
+/* end shope */
