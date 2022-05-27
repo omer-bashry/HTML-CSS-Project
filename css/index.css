@@ -923,14 +923,10 @@ cursor: pointer;
    }
 /***************************************** Style for Footre Section  ****************************************/
 
-.contact-info{
-  margin-top: -8%;
+.left{
+  margin-top: -15%;
 
 }
-
-.contact-info .desc h2{
-    font-size: 30px;
-    font-weight: 700;
-    width: 100%;
-    margin: 10px 0;
-  }
+li.social{
+  margin-top: -15%;
+}
