@@ -820,5 +820,116 @@ section .desc span{
     color: #fff;
   }
 /***************************************** Style for Social Media Section  ****************************************/
+.social{
+  margin: 50px auto;
+}
+.social h2{
+font-weight: 800;
+}
+.social span{
+font-style: italic;
+color: #a2a2a2;
+}
+.social-imges{
+  letter-spacing: -1;
+}
+.social-imges .item-img {
+cursor: pointer;
+  line-height: 0;
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  width: 180px;
+  transition: .2s;
+}
+.social-imges .item-img img{
+  width: 100%;
+  
+}
+.social-imges .item-img li{
+  position: absolute;
+  background:#000;
+  top:0%;
+  left:0%;
+  width: 100%;
+  height: 180px;
+ opacity: 0.7;
+ transition: .1s;
+ visibility: hidden;
+}
+.social-imges .item-img li i{
+  display: block;
+  }
+  .social-imges .item-img li span{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: #fff;
+    font-weight: 800;
+  }
+   .social-imges .item-img li span i{
+     padding-top: 7px;
+   }
+   .social-imges .item-img:hover li{
+      visibility: visible;
+   }
+   @media (min-width: 360px) and (max-width: 570.98px) {
+         .social-imges .item-img {
+         
+          width: 70px;
+         } 
+         .social-imges .item-img li{
+          height: 70px;
+         }
+         .social-imges .item-img li span{
+                font-size: 10px;
+         }
+         
+   }
 
+    @media (min-width:570.98px) and (max-width: 720.98px) {
+         .social-imges .item-img {
+          width: 80px;
+         } 
+         .social-imges .item-img li{
+          height: 80px;
+         }
+         .social-imges .item-img li span{
+                font-size: 12px;
+         }
+   }
+    @media (min-width: 720.98px) and (max-width: 950.98px) {
+         .social-imges .item-img {
+          width: 90px;
+         } 
+         .social-imges .item-img li{
+          height: 90px;
+         }
+         .social-imges .item-img li span{
+                font-size: 13px;
+         }
+   }
+    @media (min-width: 950.98px) and (max-width: 1199.98px) {
+         .social-imges .item-img {
+          width: 100px;
+         } 
+         .social-imges .item-img li{
+          height: 100px;
+         }
+         .social-imges .item-img li span{
+                font-size: 14px;
+         }
+   }
 /***************************************** Style for Footre Section  ****************************************/
+
+.contact-info{
+  margin-top: -8%;
+
+}
+
+.contact-info .desc h2{
+    font-size: 30px;
+    font-weight: 700;
+    width: 100%;
+    margin: 10px 0;
+  }
