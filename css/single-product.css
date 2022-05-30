@@ -1,5 +1,6 @@
 body{
     font-family: 'Roboto Flex', sans-serif;
+    height: auto;
 }
 ::selection{
     background-color: #2a2a2a;
@@ -87,6 +88,9 @@ a{
     .shope .right{
         margin-left: -150px;
     }
+}
+.shope .left{
+    margin: 0;
 }
 .shope .left img{
     width: 610px;
