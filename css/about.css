@@ -72,44 +72,44 @@ a:hover{
 }
 /* end landding */
 /* start about */
-.about{
+.about-us{
     padding-top: 80px;
     padding-bottom: 100px;
     border-bottom: 3px dotted #eee;
 }
-.about .container{
+.about-us .container{
     display: flex;
     gap: 50px;
 }
-.about .image img{
+.about-us .image img{
     width: 540px;
     height: 400px;
 }
-.about .right h3{
+.about-us .right h3{
     font-size: 35px;
     padding-bottom: 40px;
 }
-.about .right p.one{
+.about-us .right p.one{
     font-size: 14px;
     color: #aaaaaa;
     font-weight: 500;
     padding-bottom: 30px;
     line-height: 1.5;
 }
-.about .right .quts{
+.about-us .right .quts{
     display: flex;
     gap: 20px;
 }
-.about .right .quts p.two{
+.about-us .right .quts p.two{
     font-size: 14px;
     padding-bottom: 30px;
     line-height: 1.5;
     font-style: italic;
 }
-.about .right .quts i.cot{
+.about-us .right .quts i.cot{
     font-size: 35px;
 }
-.about .right p.three{
+.about-us .right p.three{
     font-size: 14px;
     color: #aaaaaa;
     font-weight: 500;
@@ -117,10 +117,10 @@ a:hover{
     line-height: 1.5;
     border-bottom: 3px dotted #eee;
 }
-.about .right .social{
+.about-us .right .social{
     padding: 20px 0 10px;
 }
-.about .right .social a{
+.about-us .right .social a{
     background-color: #2a2a2a;
     width: 45px;
     height: 45px;
@@ -132,28 +132,28 @@ a:hover{
     margin-right: 10px;
     transition: 0.5s;
 }
-.about .right .social a:hover{
+.about-us .right .social a:hover{
     background-color: #eee;
     color: #2a2a2a;
 }
 @media (max-width: 991px) {
-    .about .container{
+    .about-us .container{
         flex-direction: column;
         justify-content: center;
     }
-    .about .image {
+    .about-us .image {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 }
 @media (max-width:767px) {
-    .about .image img{
+    .about-us .image img{
         width: 360px;
         height: 266px;
     }
 }
-/* end about */
+/* end about-us */
 /* start team  */
 .team{
     padding-top: 100px;
@@ -280,51 +280,51 @@ a:hover{
 }
 /* start services */
 /* start contact */
-.contact{
+.contact-us{
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.contact .container{
+.contact-us .container{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4%;
 }
-.contact .left{
+.contact-us .left{
     flex-basis: 66%;
 }
-.contact .right{
+.contact-us .right{
     flex-basis: 30%;
 }
-.contact .left h1{
+.contact-us .left h1{
     font-size: 39px;
     line-height: 1.5;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.contact .left p{
+.contact-us .left p{
     font-size: 14px;
     color: #aaaaaa;
     font-style: italic;
     padding-bottom: 30px;
 }
-.contact .left .form input{
+.contact-us .left .form input{
     width: 300px;
     padding: 10px 15px;
 }
-.contact .left .form input:last-of-type{
+.contact-us .left .form input:last-of-type{
     margin: 0 35px;
 }
 @media (max-width: 1200px) {
-    .contact .left .form input{
+    .contact-us .left .form input{
         width: 240px;
     }
 }
-.contact .left .form input::placeholder{
+.contact-us .left .form input::placeholder{
     font-size: 14px;
     font-style: italic;
 }
-.contact .left .form span{
+.contact-us .left .form span{
     display: inline-block;
     background-color: #2a2a2a;
     color: white;
@@ -334,52 +334,52 @@ a:hover{
     transition: 0.3s;
     border: 1px solid #2a2a2a;
 }
-.contact .left .form span:hover{
+.contact-us .left .form span:hover{
     background-color: white;
     color: #2a2a2a;
 }
-.contact .right {
+.contact-us .right {
     display: flex;
     gap: 40px;
 }
-.contact .right ul li{
+.contact-us .right ul li{
     padding-bottom: 30px;
     font-weight: bold;
 }
-.contact .right ul li span{
+.contact-us .right ul li span{
     display: block;
     padding-top: 10px;
     color: #aaaaaa;
     font-weight: normal;
 }
 @media (max-width:991px) {
-    .contact .container{
+    .contact-us .container{
         flex-direction: column;
         gap: 40px;
     }
-    .contact .left{
+    .contact-us .left{
         flex-basis: 100%;
     }
-    .contact .right{
+    .contact-us .right{
         flex-basis: 100%;
     }
-    .contact .left .form input{
+    .contact-us .left .form input{
         width: 100%;
     }
-    .contact .left .form input:last-of-type{
+    .contact-us .left .form input:last-of-type{
         margin: 20px 0 10px;
     }
-    .contact .left .form span{
+    .contact-us .left .form span{
         display: block;
         width: fit-content;
         margin: 0 auto;
     }
 }
 @media (max-width: 767px) {
-    .contact .left .form span{
+    .contact-us .left .form span{
         display: block;
         text-align: center;
         width: 100%;
     }
 }
-/* end contact */
+/* end contact-us */

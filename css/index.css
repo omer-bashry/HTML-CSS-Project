@@ -3,16 +3,49 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body{
   scroll-behavior: smooth;
   user-select: none;
   overflow-x: hidden;
-  height: 5000px;
+  height: auto;
+}
+
+div.ovrlayloading{
+  position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height:6000px;
+    background: #000;
+    z-index: 99;
+   transition: 0.3s;
+}
+div.ovrlayloading .loading-content{
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.nav-scroll-down{
+  position: fixed;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 15px #eee;
+    z-index: 55;
+}
+
+.nav-link a{
+  color: #000;
+  transition: 0.3s;
+}
+.nav-link:hover a{
+ text-decoration: none;
+ color: #EEE;
 }
 /***************************************** Style for Header Section  ****************************************/
-
 
 header{
 	border-bottom: 3px dotted #EEE;
@@ -332,7 +365,7 @@ div.info .bttn,
   color: #FFF;
   font-size:13px;
    font-weight: 500;
-  transition: all 0.3s;
+  transition:  0.3s;
 }
 div.info .bttn:hover,
 .img .imgOverlay span:hover{
@@ -344,12 +377,12 @@ div.info .bttn:hover,
   width: 100%;
  
   position: relative;
-  transition: all 0.3s;
+  transition:  0.3s;
 }
 .img img{
    width:100%;
    display: block;
-   transition: all 0.3s;
+   transition:  0.3s;
   }
   .img .imgDice,
    .img .imgOverlay{
@@ -564,7 +597,7 @@ div.photo{
      margin-top: 52px;
    }
     .img .imgOverlay{
-      opacity: 1;
+      opacity: 0.99;
     }
      .img .imgOverlay h4{
       
@@ -921,12 +954,57 @@ cursor: pointer;
                 font-size: 14px;
          }
    }
-/***************************************** Style for Footre Section  ****************************************/
 
-.left{
+   .left{
   margin-top: -15%;
 
 }
 li.social{
   margin-top: -15%;
+}
+
+
+/***************************************** Style for Footre Section  ****************************************/
+footer{
+  min-height: 500px;
+}
+
+footer .col-lg-3 a{
+     text-decoration: none;
+      display: block;
+      margin: 20px 0;
+      font-size: 14px;
+      text-align:left;
+      color: #fff;
+  }
+
+  footer .col-lg-3 a:hover{
+    opacity: 0.6;
+
+  }
+ footer .row:last-of-type{
+     border-bottom: 1px solid #EEE;
+  }
+
+  footer .informatin-social {
+    text-align: center;
+  }
+footer .informatin-social p span ,.informatin-social i{
+
+  color: #cff;
+  transition: 0.3s;
+}
+footer .informatin-social p span:hover ,.informatin-social i:hover{
+  color:#dc3545; 
+}
+@media(max-width:567px){
+    footer .col-lg-3{
+      display: block;
+      width: 100%;
+      margin: 10px auto;
+      text-align: center;
+    }
+    footer .col-lg-3 a{
+          text-align: center;
+    }
 }

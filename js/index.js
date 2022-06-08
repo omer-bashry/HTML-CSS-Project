@@ -9,6 +9,7 @@ let openMnuePage = document.querySelector(".openPagedrop");
 let openMnueFeatuers = document.querySelector(".openfeaturesdrop");
  
 
+
 openMnuePage.addEventListener("click",toggelPageDrop);
 openMnueFeatuers.addEventListener("click",toggelFeaturesDrop);
 
@@ -142,3 +143,40 @@ function detailsepage(){
          window.location = "single-product.html";
 	}, 1000);
 }
+
+ // loading page 
+
+window.onlaod = setTimeout(() =>{
+	document.querySelector(".ovrlayloading").style.display="none";
+} , 1500); 
+           
+ // header fixed in scrolle
+let Section = document.querySelector(".nav-down");
+window.onscroll =  function  () {
+	if (window.scrollY  >= Section.offsetTop) {
+        document.querySelector(".nav-feixed-scrolling").classList.add("nav-scroll-down");
+          pageDrop.classList.add("mt-5");
+          featuresDrop.classList.add("mt-5");
+
+	}else{
+		 document.querySelector(".nav-feixed-scrolling").classList.remove("nav-scroll-down");
+		   pageDrop.classList.remove("mt-5");
+		   featuresDrop.classList.remove("mt-5");
+
+	}
+};
+   // Add and Remove Quntaty 
+   
+let Add = document.querySelector(".add-qunty");
+let Remove = document.querySelector(".remove-qunty");
+let Qunty = document.querySelector(".qunty");
+
+Add.addEventListener("click",function(){
+  Qunty.textContent++;
+});
+Remove.addEventListener("click",function(){
+	if (Qunty.textContent <=1 ) {
+	}else{
+		Qunty.textContent--;
+	}
+});

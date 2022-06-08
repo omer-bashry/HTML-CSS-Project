@@ -1,7 +1,8 @@
 let Headerpage = document.querySelector("header");
 
 Headerpage.innerHTML =
- `
+ ` 
+  <div class="nav-feixed-scrolling"> 
   <nav class=" navbar navbar-expand-lg text-body ">
 		  <a class="navbar-brand  bg-Dark" href="index.html"><img class="logo" src="images/logo.png"></a>
 		      <img class="closemnue" src="images/close.png">
@@ -13,16 +14,19 @@ Headerpage.innerHTML =
 	  <div class="collapse navbar-collapse">
 			  <ul class="navbar-nav ">
 			      <li class="active nav-item nav-link home ">
-			         Home 
+			        Home
 			      </li>
 			      <li class="nav-item nav-link">
-			           Men's
+			       <a href="#Men"> Men's</a>
+			          
 			      </li>
 			       <li class="nav-item nav-link">
-			           Women's
+			        <a href="#Women"> Women's</a>
+			           
 			      </li>
 			       <li class="nav-item nav-link">
-			           Kid's
+			       <a href="#kids"> Kid's</a>
+			          
 			      </li>
 			      <li class="nav-item nav-link dropdown openPagedrop">
 				     <div class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle=" dropdown" aria-expanded="false">
@@ -36,8 +40,8 @@ Headerpage.innerHTML =
 				        Features
 				        </div>
 			      </li>
-			      <li class="nav-item nav-link">
-			         Explore
+			      <li class="nav-item nav-link" >
+			        <a href="#explore">  Explore  </a>
 			      </li>
 			  </ul>
 		 </div>
@@ -63,4 +67,5 @@ Headerpage.innerHTML =
 			     
 			    </ul>
           </div>
+     </div>
 `;
